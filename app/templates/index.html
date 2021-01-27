@@ -1,8 +1,10 @@
 {% extends 'base.html' %}
+{% block content %}
 <h1>index.html</h1>
 <hr>
 <a>index start !!!</a>
 <hr>
-{% block content %}
+
+<a href="{% url 'category' %}">category</a>
 
 {% endblock %}

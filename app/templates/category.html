@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>category.html</h1>
+<hr>
+<a>category start !!!</a>
+<hr>
+<form action="{% url 'check' %}" method="POST">
+{%csrf_token%}  
+<div style="display:none">
+<textarea rows="32" cols="20" name="sample">
+과일
+채소
+쌀/잡곡
+견과/건강분말
+정육/계란
+수산물/건어물
+우유/유제품
+반찬/냉장/냉동
+반찬/간편식/델리
+라면/면류/즉석밥
+과자/시리얼
+음료/커피/차/꿀
+통조림/조미료/장류
+베이커리/잼
+화장지/생리대
+헤어/바디/화장품
+구강/면도
+건강/의약외품
+세제/욕실/청소
+주방/일회용품
+베이비/출산용품
+수납/가구/홈데코
+침구/수예
+반려용품/취미
+문구/완구
+스포츠/자동차
+의류/언더웨어
+잡화/슈즈
+가전/디지털
+e-쿠폰/여행</textarea>
+</div>
+
+<textarea rows="32" cols="20" name="check">
+
+</textarea>
+
+
+<input type="submit" value="검사">
+</form>
+{% endblock %}
